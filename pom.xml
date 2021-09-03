@@ -20,7 +20,7 @@
     <properties>
         <java.version>1.8</java.version>
     </properties>
-<!-- Dependencias 123-->
+<!-- Dependencias del proyecto-->
     <dependencies>
 
         <dependency>
