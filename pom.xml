@@ -58,7 +58,7 @@
     <artifactId>spring-cloud-starter-loadbalancer</artifactId>
     <version>3.0.3</version>
 </dependency>
-<!-- Comment to test -->
+<!-- Test  -->
 <!-- https://mvnrepository.com/artifact/de.codecentric/spring-boot-admin-starter-client -->
 <dependency>
     <groupId>de.codecentric</groupId>
