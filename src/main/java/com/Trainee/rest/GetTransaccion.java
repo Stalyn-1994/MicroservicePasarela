@@ -23,10 +23,7 @@ public class GetTransaccion {
 	
 	@Autowired
 	private ServicioTransaction servicio;
-	
-	
 
-	
 	
 	@GetMapping
 	private ResponseEntity<List<Transacction>> listarTodasLasPersona (){
