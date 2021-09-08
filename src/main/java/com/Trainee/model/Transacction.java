@@ -1,71 +1,56 @@
 package com.Trainee.model;
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+
+
 @Entity
-@Table(name="transaccion")
+@Table(name="transaccionfinal")
 public class Transacction {
 
 	@Id
-	private int id_transaccion;	
-	private int id_banco;
-	private int id_cliente;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(columnDefinition = "serial")
+	private int id_transaccion_final;	
+	private int id_banco;	
 	private int id_proveedor;
-	private Double monto;
-	private String estado;
-	private String fecha_transaccion;
+	private String nombre_cliente;
+	private String cedula_cliente;
+	private String numero_tarjeta;
+	private String fecha_caducidad;
+	private String codigo_ccv;
+	private String tipo_tarjeta;		
+	private Double total;
+	private int estado;	
 	private int diferimiento;
+	
+	
 	public int getId_banco() {
 		return id_banco;
 	}
 	
-	
-	public int getId_transaccion() {
-		return id_transaccion;
-	}
-
-
-	public void setId_transaccion(int id_transaccion) {
-		this.id_transaccion = id_transaccion;
-	}
-
-
-	public String getFecha_transaccion() {
-		return fecha_transaccion;
-	}
-
-
-	public void setFecha_transaccion(String fecha_transaccion) {
-		this.fecha_transaccion = fecha_transaccion;
-	}
-
-
 	public void setId_banco(int id_banco) {
 		this.id_banco = id_banco;
 	}
-	public int getId_cliente() {
-		return id_cliente;
-	}
-	public void setId_cliente(int id_cliente) {
-		this.id_cliente = id_cliente;
-	}
+	
 	public int getId_proveedor() {
 		return id_proveedor;
 	}
 	public void setId_proveedor(int id_proveedor) {
 		this.id_proveedor = id_proveedor;
 	}
-	public Double getMonto() {
-		return monto;
-	}
-	public void setMonto(Double monto) {
-		this.monto = monto;
-	}
-	public String getEstado() {
+
+	
+
+	public int getEstado() {
 		return estado;
 	}
-	public void setEstado(String estado) {
+
+	public void setEstado(int estado) {
 		this.estado = estado;
 	}
 
@@ -75,25 +60,85 @@ public class Transacction {
 	public void setDiferimiento(int diferimiento) {
 		this.diferimiento = diferimiento;
 	}
+	
+	
 	public Transacction() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-
-	public Transacction(int id_transaccion, int id_banco, int id_cliente, int id_proveedor, Double monto, String estado,
-			String fecha_transaccion, int diferimiento) {
-		super();
-		this.id_transaccion = id_transaccion;
-		this.id_banco = id_banco;
-		this.id_cliente = id_cliente;
-		this.id_proveedor = id_proveedor;
-		this.monto = monto;
-		this.estado = estado;
-		this.fecha_transaccion = fecha_transaccion;
-		this.diferimiento = diferimiento;
+	public int getId_transaccion_final() {
+		return id_transaccion_final;
 	}
 
+	public void setId_transaccion_final(int id_transaccion_final) {
+		this.id_transaccion_final = id_transaccion_final;
+	}
+
+	public String getNombre_cliente() {
+		return nombre_cliente;
+	}
+
+	public void setNombre_cliente(String nombre_cliente) {
+		this.nombre_cliente = nombre_cliente;
+	}
+
+	public String getCedula_cliente() {
+		return cedula_cliente;
+	}
+
+	public void setCedula_cliente(String cedula_cliente) {
+		this.cedula_cliente = cedula_cliente;
+	}
+
+	public String getNumero_tarjeta() {
+		return numero_tarjeta;
+	}
+
+	public void setNumero_tarjeta(String numero_tarjeta) {
+		this.numero_tarjeta = numero_tarjeta;
+	}
+
+	public String getFecha_caducidad() {
+		return fecha_caducidad;
+	}
+
+	public void setFecha_caducidad(String fecha_caducidad) {
+		this.fecha_caducidad = fecha_caducidad;
+	}
+
+	public String getCodigo_ccv() {
+		return codigo_ccv;
+	}
+
+	public void setCodigo_ccv(String codigo_ccv) {
+		this.codigo_ccv = codigo_ccv;
+	}
+
+	public String getTipo_tarjeta() {
+		return tipo_tarjeta;
+	}
+
+	public void setTipo_tarjeta(String tipo_tarjeta) {
+		this.tipo_tarjeta = tipo_tarjeta;
+	}
+
+	public Double getTotal() {
+		return total;
+	}
+
+	public void setTotal(Double total) {
+		this.total = total;
+	}
+
+
+
+
+
+
 	
+
+
+
 	
 }

@@ -19,12 +19,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <suiteXmlFile>/resources/testNg.xml</suiteXmlFile>
 	</properties>
-<<<<<<< HEAD
 	
-	
-=======
-
->>>>>>> 50f162d4093b1a5715e9f82a1814a5bb7d36bf63
 	<dependencies>
 
     <!-- https://mvnrepository.com/artifact/org.testng/testng -->

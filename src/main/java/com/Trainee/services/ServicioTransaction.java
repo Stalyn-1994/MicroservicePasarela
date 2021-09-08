@@ -14,8 +14,24 @@ public class ServicioTransaction {
 	@Autowired
 	private ServicioTransaccion transacctionResporitory;
 	
-	public Transacction create (Transacction persona) {
-		return transacctionResporitory.save(persona);
+	public String create (Transacction persona) {
+		persona.setEstado((int)(Math.random()*3 + 1));
+		transacctionResporitory.save(persona);
+		String estado="En proceso";
+		switch (persona.getEstado()) {
+		case 1:
+			estado="Aprobado";
+			break;
+		case 2:
+			estado="Reprobado";
+			break;
+		case 3:
+			estado="En proceso";
+	break;
+
+		
+		}
+		return estado;
 	}
 	
 	public List<Transacction> getAllPersonas (){
