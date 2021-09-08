@@ -1,0 +1,1 @@
+web: java $JAVA_OPTS -jar target/spring-boot-docker.jar --port $PORT 
