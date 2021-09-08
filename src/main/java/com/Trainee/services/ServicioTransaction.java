@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.Trainee.model.Transacction;
+import com.Trainee.model.transaccionfinal;
 import com.Trainee.repository.ServicioTransaccion;
 
 
@@ -14,7 +14,7 @@ public class ServicioTransaction {
 	@Autowired
 	private ServicioTransaccion transacctionResporitory;
 	
-	public String create (Transacction persona) {
+	public String create (transaccionfinal persona) {
 		persona.setEstado((int)(Math.random()*3 + 1));
 		transacctionResporitory.save(persona);
 		String estado="En proceso";
@@ -34,7 +34,7 @@ public class ServicioTransaction {
 		return estado;
 	}
 	
-	public List<Transacction> getAllPersonas (){
+	public List<transaccionfinal> getAllPersonas (){
 		return transacctionResporitory.findAll();
 	}
 }

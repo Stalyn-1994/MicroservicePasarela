@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.Trainee.model.Transacction;
+import com.Trainee.model.transaccionfinal;
 import com.Trainee.services.ServicioTransaction;
 
 @RestController
@@ -19,13 +19,13 @@ public class GetTransaccion {
 
 	
 	@GetMapping
-	private ResponseEntity<List<Transacction>> listarTodasLasPersona (){
+	private ResponseEntity<List<transaccionfinal>> listarTodasLasPersona (){
 		return ResponseEntity.ok(servicio.getAllPersonas());
 	}
 
 
 	@PostMapping
-	private String guardar (@RequestBody Transacction persona){
+	private String guardar (@RequestBody transaccionfinal persona){
 		String temporal = servicio.create(persona);
 		
 		try {

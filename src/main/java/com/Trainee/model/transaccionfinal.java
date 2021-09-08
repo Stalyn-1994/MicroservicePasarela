@@ -9,8 +9,7 @@ import javax.persistence.Table;
 
 
 @Entity
-@Table(name="transaccionfinal")
-public class Transacction {
+public class transaccionfinal {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -62,7 +61,9 @@ public class Transacction {
 	}
 	
 	
-	public Transacction() {
+	
+
+	public transaccionfinal() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
