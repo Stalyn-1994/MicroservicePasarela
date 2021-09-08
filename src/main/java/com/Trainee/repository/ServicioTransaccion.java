@@ -6,6 +6,6 @@ import com.Trainee.model.transaccionfinal;
 
 
 
-public interface ServicioTransaccion extends JpaRepository<transaccionfinal, Long>{
+public interface ServicioTransaccion extends JpaRepository<transaccionfinal, Integer>{
 
 }
