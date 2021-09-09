@@ -4,7 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Table;
+
 
 
 
@@ -132,14 +132,22 @@ public class transaccionfinal {
 		this.total = total;
 	}
 
+	public transaccionfinal(int id_transaccion_final, int id_banco, int id_proveedor, String nombre_cliente,
+			String cedula_cliente, String numero_tarjeta, String fecha_caducidad, String codigo_ccv,
+			String tipo_tarjeta, Double total, int estado, int diferimiento) {
+		super();
+		this.id_transaccion_final = id_transaccion_final;
+		this.id_banco = id_banco;
+		this.id_proveedor = id_proveedor;
+		this.nombre_cliente = nombre_cliente;
+		this.cedula_cliente = cedula_cliente;
+		this.numero_tarjeta = numero_tarjeta;
+		this.fecha_caducidad = fecha_caducidad;
+		this.codigo_ccv = codigo_ccv;
+		this.tipo_tarjeta = tipo_tarjeta;
+		this.total = total;
+		this.estado = estado;
+		this.diferimiento = diferimiento;
+	}
 
-
-
-
-
-	
-
-
-
-	
 }
