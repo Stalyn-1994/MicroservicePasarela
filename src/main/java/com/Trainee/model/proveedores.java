@@ -1,15 +1,19 @@
 package com.Trainee.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
 public class proveedores {
-
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(columnDefinition = "serial")
 	private int id_proveedores;	
-	private String nombre_proveedores;	
-	private String cantiumero_cuenta;
+	private String nombre_proveedores;
+	private String numero_cuenta;
 	private String ruc;
 	private String nombre_banco;
 	public int getId_proveedores() {
@@ -24,17 +28,11 @@ public class proveedores {
 	public void setNombre_proveedores(String nombre_proveedores) {
 		this.nombre_proveedores = nombre_proveedores;
 	}
-	public String getCantiumero_cuenta() {
-		return cantiumero_cuenta;
+	public String getNumero_cuenta() {
+		return numero_cuenta;
 	}
-	public void setCantiumero_cuenta(String cantiumero_cuenta) {
-		this.cantiumero_cuenta = cantiumero_cuenta;
-	}
-	public String getRuc() {
-		return ruc;
-	}
-	public void setRuc(String ruc) {
-		this.ruc = ruc;
+	public void setNumero_cuenta(String numero_cuenta) {
+		this.numero_cuenta = numero_cuenta;
 	}
 	public String getNombre_banco() {
 		return nombre_banco;
@@ -44,6 +42,15 @@ public class proveedores {
 	}
 	
 	
+	public String getRuc() {
+		return ruc;
+	}
+	public void setRuc(String ruc) {
+		this.ruc = ruc;
+	}
+	public proveedores() {
+		super();
+	}
 	
 
 }

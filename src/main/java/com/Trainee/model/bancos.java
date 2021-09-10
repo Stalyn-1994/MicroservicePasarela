@@ -1,13 +1,26 @@
 package com.Trainee.model;
-
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
+
 
 @Entity
 public class bancos {
+
 	@Id
-	private int id_banco;	
-	private String nombre_banco;	
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(columnDefinition = "serial")
+	private int id_banco;
+	private String nombre_banco;
+	
+	
+	
+	public bancos() {
+		super();
+	}
 	
 	public int getId_banco() {
 		return id_banco;
@@ -21,6 +34,7 @@ public class bancos {
 	public void setNombre_banco(String nombre_banco) {
 		this.nombre_banco = nombre_banco;
 	}
-		
-
+	
+	
+	
 }
