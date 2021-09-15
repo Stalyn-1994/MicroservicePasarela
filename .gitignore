@@ -1,6 +1,6 @@
 HELP.md
 
-.xml
+.gradle
 target/*
 !/target/
 !.mvn/wrapper/maven-wrapper.jar
