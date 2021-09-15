@@ -1,5 +1,16 @@
 HELP.md
 
+
+.gradle
+
+build/*
+!/build/libs
+
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+
 .gradle
 target/*
 !/target/
