@@ -16,7 +16,7 @@ import com.Trainee.Base64;
 import com.Trainee.model.transaccionfinal;
 import com.Trainee.repository.ServicioTransaccion;
 import com.Trainee.services.ServicioTransaction;
-
+//Restcontroller
 @RestController
 @CrossOrigin(origins = "*", methods= {RequestMethod.GET,RequestMethod.POST})
 @RequestMapping(path="/rest/dataTrainee")
