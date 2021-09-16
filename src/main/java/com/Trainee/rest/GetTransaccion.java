@@ -33,7 +33,7 @@ public class GetTransaccion {
 	}
 
 	
-	
+	//commit
 	//getmapp
 	@GetMapping
 	@RequestMapping(path="/bancos/{id}")
