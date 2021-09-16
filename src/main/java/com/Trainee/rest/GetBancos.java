@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.Trainee.model.bancos;
 import com.Trainee.services.ServicioBanco;
 
-
+//comentario1
 
 @RestController
 @CrossOrigin(origins = "*", methods= {RequestMethod.GET,RequestMethod.POST})
