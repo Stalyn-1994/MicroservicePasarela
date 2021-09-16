@@ -15,7 +15,7 @@ import com.Trainee.services.ServicioBanco;
 
 //Holatu
 //comoestas
-
+//comentario 3
 @RestController
 @CrossOrigin(origins = "*", methods= {RequestMethod.GET,RequestMethod.POST})
 @RequestMapping(path="/rest/bancos")
