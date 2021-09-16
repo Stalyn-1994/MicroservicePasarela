@@ -34,7 +34,7 @@ public class GetTransaccion {
 
 	
 	
-	
+	//getmapp
 	@GetMapping
 	@RequestMapping(path="/bancos/{id}")
 	private ResponseEntity<List<transaccionfinal>> listarbancos (@PathVariable Integer id){	
